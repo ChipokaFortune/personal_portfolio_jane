@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website - Nolo Jevu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Logo_Top Left.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header" style="color: black;">Home</a></li>
+                <li><a href="#about" style="color: black;">About</a></li>
+                <li><a href="#services" style="color: black;">Services</a></li>
+                <li><a href="#portfolio" style="color: black;">Portfolio</a></li>
+                <li><a href="#contact" style="color: black;">Contact Me</a></li>
+                <i class="fas fa-times" onclick="closemenu()" style="color: black;"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="header-subtitle">Botanist | Biochemist | Call Centre Team Lead</p>
+            <h1>Hi, I'm Nolonwabo Jevu</h1>
+            <p class="header-subtext">
+                Passionate about optimizing processes and <br> enhancing customer service efficiency
+            </p>
+        </div>
+        </div>
+        </div>
+    <!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a dedicated and results-driven professional with a strong background in call center operations. I started my career as a dispatcher, where my efficiency and problem-solving skills quickly set me apart. My ability to handle high-pressure situations and streamline processes led to a rapid promotion to Team Leader, where I now guide and motivate my team to deliver exceptional service.</p>
+
+                <p>Despite my career in the call center industry, I hold a degree in Botany and Biochemistry, which has sharpened my analytical thinking and attention to detail. My scientific background gives me a unique perspective on process optimization, data analysis, and structured problem-solving—skills I effectively apply in my leadership role.</p>
+                    
+                <p>I am passionate about fostering teamwork, enhancing customer service efficiency, and continuously improving call center operations. Thriving in dynamic environments, I am always eager to take on new challenges that push my team and the business forward.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Process Optimization</span><br>Enhancing call center workflows and dispatch systems for increased efficiency.</li>
+                        <li><span>Data Analytics & Performance Tracking</span><br>Utilizing data-driven insights to improve agent performance and customer satisfaction.</li>
+                        <li><span>Training & Knowledge Management</span><br>Designing structured training programs to develop high-performing teams.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>June 2017 - Current</span><br>ECC Dispatch Team Leader at Automobile Association of South Africa</li>
+                        <li><span>October 2015 - May 2017</span><br>Incident Coordinator at Automobile Association of South Africa</li>
+                        <li><span>February 2015 - September 2015</span><br>Call Taking Agent at Automobile Association of South Africa</li>
+                        <li><span>February 2012 - November 2012</span><br>Laboratory Assistant at University of Johannesburg</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>Contact Centre Support NQF 2 – Services Seta</li>
+                        <li><span>2012</span><br>BSc Life and Environmental Sciences (Botany & Biochemistry) – University of Johannesburg</li>
+                        <li><span>2008</span><br>National Senior Certificate – St Enda's Secondary School, Johannesburg</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">How I Make an Impact</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-chart-line"></i>
+                <h2>Data-Driven Decision Making & Process Optimization</h2>
+                <p>Leveraging analytical skills from biochemistry to interpret call center metrics</p>
+                <p>Identifying trends in customer interactions to enhance efficiency</p>
+                <p>Implementing structured problem-solving techniques to improve operations</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h2>Training & Knowledge Management</h2>
+                <p>Developing science-based training methodologies for skill retention</p>
+                <p>Creating structured learning programs for dispatchers and call center agents</p>
+                <p>Applying research-based approaches to optimize customer service strategies</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-tasks"></i>
+                <h2>Quality Assurance & Performance Analysis</h2>
+                <p>Using a scientific approach to assess and enhance agent performance</p>
+                <p>Conducting root cause analysis for service inefficiencies</p>
+                <p>Designing and implementing KPIs based on measurable data insights</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">What I Do</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> <a href="mailto:janejevu@gmail.com">janejevu@gmail.com</a></p>
+                <p><i class="fas fa-phone-square-alt"></i> 071 948 0277</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/nolonwabo-jane-jevu-941141154" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Jane Jevu - Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="copyright">
+        <p>Copyright © Nolonwabo. Made with <i class="fas fa-heart"></i> by <a href="https://www.linkedin.com/in/fortune-chipoka-32bb20116/">Fortune Chipoka</a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< https://docs.google.com/spreadsheets/d/12rmrWzlS9_DzS1IhlFdL4Zfk1IdU0HSsESXltln-uAM/edit?gid=0#gid=0>' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
